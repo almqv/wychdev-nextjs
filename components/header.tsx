@@ -5,10 +5,10 @@ const Header = styled.header`
 	display: flex;
 	align-items: center;
 	border-bottom: var(--border-size) var(--border-type) var(--border-color);
-	padding: var(--v-uni-padding) var(--h-uni-padding);
+	padding: 1rem 4rem;
+	gap: 2rem;
 
 	h1 {
-		font-size: 2rem;
 		font-weight: normal;
 	}
 

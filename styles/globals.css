@@ -1,20 +1,21 @@
 :root {
-	font-size: 16px;
-	--border-type: dotted;
+	font-size: 18px;
+	--border-type: solid;
 	--border-size: 1px;
-	--border-color: #ddd;
+	--border-color: #373a44;
 	--border-radius: 1rem;
 
 	--content-max-width: 60rem;
 	--h-uni-padding: .8rem;
 	--v-uni-padding: .2rem;
 
-	--fg: #222;
+	--fg: #bbc2cf;
+	--fg-emph: #fff;
 	--fg-faded: #aaa;
-	--fg-button: #0a070a;
+	--fg-button: var(--fg-faded);
 	--fg-link: #abf;
 
-	--bg: #fefeff;
+	--bg: #272a34;
 	color: var(--fg);
 }
 
@@ -43,6 +44,13 @@ a {
 
 main {
 	min-height: 70vh;
+}
+
+h1, h2, h3, h4, h5 {
+	color: var(--fg-emph);
+}
+p {
+	margin: .5rem 0;
 }
 
 
