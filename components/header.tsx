@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Nav from './nav'
+import Link from "next/link"
 
 const Header = styled.header`
 	display: flex;
@@ -10,6 +11,10 @@ const Header = styled.header`
 
 	h1 {
 		font-weight: normal;
+
+		a {
+			color: inherit;
+		}
 	}
 
 	nav {
@@ -21,7 +26,7 @@ const Header = styled.header`
 export default () => {
 	return (
 		<Header>
-			<h1>wych.dev</h1>
+			<h1><Link href="/">wych.dev</Link></h1>
 			<Nav />
 		</Header>
 	)

@@ -1,5 +1,5 @@
-import Link from "next/link"
 import styled from 'styled-components'
+import ActiveLink from './activelink'
 
 const Nav = styled.nav`
 	display: flex;
@@ -9,7 +9,7 @@ const Nav = styled.nav`
 
 	a {
 		color: var(--fg-button);
-		transition: .2s opacity;
+		transition: var(--trans-time) opacity;
 	}
 
 	a:hover {
@@ -20,8 +20,8 @@ const Nav = styled.nav`
 export default () => {
 	return (
 		<Nav>
-			<Link href="/">Home</Link>
-			<Link href="/projects">Projects</Link>
+			<ActiveLink href="/">Home</ActiveLink>
+			<ActiveLink href="/projects">Projects</ActiveLink>
 			<a href="https://github.com/E-Almqvist" target="_blank">GitHub</a>
 		</Nav>
 	)

@@ -10,13 +10,17 @@
 	--v-uni-padding: .2rem;
 
 	--fg: #bbc2cf;
+	color: var(--fg);
 	--fg-emph: #fff;
 	--fg-faded: #aaa;
 	--fg-button: var(--fg-faded);
 	--fg-link: #abf;
+	--fg-code: #ffbe85;
 
 	--bg: #272a34;
-	color: var(--fg);
+	--bg-dark: #161f27; 
+
+	--trans-time: .2s;
 }
 
 * {
@@ -40,13 +44,14 @@ body {
 a {
 	color: var(--fg-link);
 	text-decoration: none;
+	transition: var(--trans-time) opacity;
 }
 
-main {
-	min-height: 70vh;
+a:hover {
+	opacity: .4;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, em {
 	color: var(--fg-emph);
 }
 p {
