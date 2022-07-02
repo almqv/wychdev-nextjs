@@ -4,7 +4,9 @@ import Layout from '../components/layout'
 
 const Page: NextPageWithLayout = () => {
 	return (
-		<p>yo</p>
+		<>
+			<p>I am a student with a passion for programming, physics/mathematics and *NIX (Linux, UNIX etc).</p>
+		</>
 	)
 }
 
