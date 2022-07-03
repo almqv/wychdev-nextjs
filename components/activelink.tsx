@@ -3,7 +3,6 @@ import { ReactNode } from "react"
 import Link from "next/link"
 import styled, {css} from "styled-components"
 
-
 const ALink = styled.a<{active?: boolean}>`
 	border-bottom: 1px solid transparent;
 	${({active}) => active && css`
@@ -12,7 +11,7 @@ const ALink = styled.a<{active?: boolean}>`
 	`}
 `
 
-export default ({children, href}: {children: ReactNode, href: string}) => {
+const ActiveLink = ({children, href}: {children: ReactNode, href: string}) => {
 	const router = useRouter()
 	return (
 		<Link href={href} passHref>
@@ -20,3 +19,5 @@ export default ({children, href}: {children: ReactNode, href: string}) => {
 		</Link>
 	)
 }
+
+export default ActiveLink

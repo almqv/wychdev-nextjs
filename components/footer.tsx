@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Link from "next/link"
 
-const Footer = styled.footer`
+const FooterCont = styled.footer`
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -24,11 +24,11 @@ const Spacer = styled.div`
 	flex: 1;
 `
 
-export default () => {
+const Footer = () => {
 	return (
 		<>
 			<Spacer />
-			<Footer>
+			<FooterCont>
 				<p>Copyright &copy; {new Date().getFullYear()} Elias Almqvist</p>
 				<UList>
 					<li><a href="#">{"<Back to top>"}</a></li>
@@ -36,10 +36,12 @@ export default () => {
 				</UList>
 				<p>Source Code</p>
 				<UList>
-					<li><a href="https://github.com/E-Almqvist/wychdev-nextjs" target="_blank">GitHub</a></li>
-					<li><a href="https://git.wych.dev/wychdev-nextjs.git" target="_blank">WychGit</a></li>
+					<li><a href="https://github.com/E-Almqvist/wychdev-nextjs" target="_blank" rel="noreferrer">GitHub</a></li>
+					<li><a href="https://git.wych.dev/wychdev-nextjs.git" target="_blank" rel="noreferrer">WychGit</a></li>
 				</UList>
-			</Footer>
+			</FooterCont>
 		</>
 	)
 }
+
+export default Footer

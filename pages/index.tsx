@@ -62,7 +62,7 @@ const Page: NextPageWithLayout = () => {
 
 			<Section> 
 				<h2>Projects</h2> 
-				<p>Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
+				<p>Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
 			</Section> 
 
 			<Section>
@@ -104,7 +104,7 @@ const Page: NextPageWithLayout = () => {
 
 			<Section>
 				<h2 id="contact">Contact</h2>
-				<p>You can contact me through email. And if you prefer it, you can contact me using PGP. Do note that my <em>email address below is encrypted</em> as a precaution against bots et cetera. <em>Do not worry, it is easy to crack</em>. Alternatively you could query for my email with my PGP fingerprint (key-id) on some PGP key server (i.e. the <a href="https://pgp.mit.edu/" target="_blank">MIT</a> or <a href="https://keyserver.ubuntu.com/" target="_blank">Ubuntu</a> key-server).</p>
+				<p>You can contact me through email. And if you prefer it, you can contact me using PGP. Do note that my <em>email address below is encrypted</em> as a precaution against bots et cetera. <em>Do not worry, it is easy to crack</em>. Alternatively you could query for my email with my PGP fingerprint (key-id) on some PGP key server (i.e. the <a href="https://pgp.mit.edu/" target="_blank" rel="noreferrer">MIT</a> or <a href="https://keyserver.ubuntu.com/" target="_blank" rel="noreferrer">Ubuntu</a> key-server).</p>
 				<CList>
 					<li>
 						PGP Fingerprint: <Code>68B2976849F03C7238AEB081E31A99CE3E75A158</Code>
@@ -113,7 +113,7 @@ const Page: NextPageWithLayout = () => {
 						Email: <Code>cnlueXpkaXZmZ0B0em52eS5wYnoK</Code>
 					</li>
 					<li>
-						GitHub: <a href="https://github.com/E-Almqvist" target="_blank">github.com/E-Almqvist</a>
+						GitHub: <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">github.com/E-Almqvist</a>
 					</li>
 				</CList>
 			</Section>

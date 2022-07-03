@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Nav from './nav'
 import Link from "next/link"
 
-const Header = styled.header`
+const HeaderCont = styled.header`
 	display: flex;
 	align-items: center;
 	border-bottom: var(--border-size) var(--border-type) var(--border-color);
@@ -23,11 +23,13 @@ const Header = styled.header`
 	}
 `
 
-export default () => {
+const Header = () => {
 	return (
-		<Header>
+		<HeaderCont>
 			<h1><Link href="/">wych.dev</Link></h1>
 			<Nav />
-		</Header>
+		</HeaderCont>
 	)
 }
+
+export default Header

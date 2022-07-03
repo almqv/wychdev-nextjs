@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import ActiveLink from './activelink'
 
-const Nav = styled.nav`
+const NavCont = styled.nav`
 	display: flex;
 	gap: 1.5rem;
 	font-size: 1.2rem;
@@ -17,14 +17,16 @@ const Nav = styled.nav`
 	}
 `
 
-export default () => {
+const Nav = () => {
 	return (
-		<Nav>
+		<NavCont>
 			<ActiveLink href="/">About</ActiveLink>
 			<ActiveLink href="/#contact">Contact</ActiveLink>
 			<ActiveLink href="/projects">Projects</ActiveLink>
-			<a href="https://github.com/E-Almqvist" target="_blank">GitHub</a>
+			<a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>
 			<a href="https://git.wych.dev">WychGit</a>
-		</Nav>
+		</NavCont>
 	)
 }
+
+export default Nav
