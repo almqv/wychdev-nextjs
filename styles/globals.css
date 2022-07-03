@@ -67,3 +67,12 @@ em {
 	font-style: normal;
 	text-shadow: var(--emph-shadow) currentColor;
 }
+
+
+
+@media only screen and (max-width: 940px) {
+	.burger-container {
+		display: block;
+		background-color: lightblue;
+	}
+}

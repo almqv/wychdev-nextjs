@@ -2,11 +2,14 @@ import styled from 'styled-components'
 import Link from "next/link"
 
 const MenuLine = styled.div`
-	display: block;
-	width: 15rem;
-	height: 5px;
-	border-radius: 4px;
+	width: 2rem;
+	height: 2px;
+	border-radius: 2px;
 	background-color: var(--fg);
+	&:not(:last-child) {
+		margin-bottom: .4rem;
+	}
+}
 `
 
 const Menu = () => {
