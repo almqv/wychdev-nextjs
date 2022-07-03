@@ -1,5 +1,5 @@
-import Link from "next/link"
 import styled from 'styled-components'
+import Link from "next/link"
 
 const Footer = styled.footer`
 	display: flex;
@@ -20,14 +20,26 @@ const UList = styled.ul`
 	gap: 2rem;
 `
 
+const Spacer = styled.div`
+	flex: 1;
+`
+
 export default () => {
 	return (
-		<Footer>
-			<p>Copyright &copy; {new Date().getFullYear()} Elias Almqvist</p>
-			<UList>
-				<li><a href="" target="_blank">GitHub</a></li>
-				<li><a href="" target="_blank">Wych Git</a></li>
-			</UList>
-		</Footer>
+		<>
+			<Spacer />
+			<Footer>
+				<p>Copyright &copy; {new Date().getFullYear()} Elias Almqvist</p>
+				<UList>
+					<li><a href="#">{"<Back to top>"}</a></li>
+					<li><Link href="/">{"<Go back home>"}</Link></li>
+				</UList>
+				<p>Source Code</p>
+				<UList>
+					<li><a href="https://github.com/E-Almqvist/wychdev-nextjs" target="_blank">GitHub</a></li>
+					<li><a href="https://git.wych.dev/wychdev-nextjs.git" target="_blank">WychGit</a></li>
+				</UList>
+			</Footer>
+		</>
 	)
 }

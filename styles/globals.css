@@ -16,9 +16,11 @@
 	--fg-button: var(--fg-faded);
 	--fg-link: #abf;
 	--fg-code: #ffbe85;
+	--fg-gold: #fff190;
+	--emph-shadow: 0 0 4px;
 
 	--bg: #272a34;
-	--bg-dark: #161f27; 
+	--bg-dark: #21242b; 
 
 	--trans-time: .2s;
 }
@@ -34,11 +36,12 @@ html {
 	background: var(--bg);
 }
 
-body {
+#__next { /*body*/
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 	max-width: var(--content-max-width); 
+	min-height: 100vh;
 }
 
 a {
@@ -54,8 +57,13 @@ a:hover {
 h1, h2, h3, h4, h5, em {
 	color: var(--fg-emph);
 }
+
 p {
 	margin: .5rem 0;
 }
 
-
+em {
+	font-weight: normal;
+	font-style: normal;
+	text-shadow: var(--emph-shadow) currentColor;
+}

@@ -5,7 +5,7 @@ import {ReactNode} from 'react'
 export default ({children}: {children: ReactNode}) => {
 	return <>
 		<Header />
-		<main>{children}</main>
+			<main>{children}</main>
 		<Footer />
 	</>
 }
