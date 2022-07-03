@@ -9,16 +9,28 @@ const MenuLine = styled.div`
 	&:not(:last-child) {
 		margin-bottom: .4rem;
 	}
-}
+`
+
+const BurgerContainer = styled.div`
+	display: none;
+	flex-direction: column;
+
+	@media screen and (max-width: 960px) {
+		display: flex;
+
+		nav {
+			display: none;
+		}
+	}
 `
 
 const Menu = () => {
 	return (
-		<div className="burger-container">
+		<BurgerContainer>
 				<MenuLine />
 				<MenuLine />
 				<MenuLine />
-		</div>
+		</BurgerContainer>
 	)
 }
 
