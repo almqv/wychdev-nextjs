@@ -18,6 +18,7 @@ const BurgerContainer = styled.div<{open: boolean}>`
 	height: 1.8rem;
 	flex-direction: column;
 	justify-content: center;
+	margin-left: auto;
 
 	div {
 		transition: .2s;

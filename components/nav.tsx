@@ -15,6 +15,12 @@ const NavCont = styled.nav`
 	a:hover {
 		opacity: .4;
 	}
+
+	@media screen and (max-width: 960px) {
+		display: none;
+		position: absolute;
+		top: 0;
+	}
 `
 
 const Nav = () => {
