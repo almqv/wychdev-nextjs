@@ -16,9 +16,12 @@ const BurgerContainer = styled.div<{open: boolean}>`
 	display: none;
 	width: 1.8rem;
 	height: 1.8rem;
-	background-color: yellow;
 	flex-direction: column;
 	justify-content: center;
+
+	div {
+		transition: .2s;
+	}
 
 	&:hover {
 		cursor: pointer;
@@ -28,14 +31,24 @@ const BurgerContainer = styled.div<{open: boolean}>`
 		display: flex;
 
 		nav {
-			display: none;
+			display: none !important;
+			position: absolute;
+			top: 0;
 		}
 	}
 
 	${({open}) => open && css`
-		background-color: red;
-		div:not(:last-child) {
-			background-color: green;
+		div {
+			position: absolute;
+			height: 4px;
+		}
+
+		div:nth-child(1) {
+			transform: rotate(45deg) translate(.2rem, .2rem);
+		}
+
+		div:nth-child(2) {
+			transform: rotate(-45deg) translate(-.18rem, .2rem);
 		}
 
 		div:last-child {
