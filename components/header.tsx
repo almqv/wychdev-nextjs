@@ -1,6 +1,7 @@
-import styled from 'styled-components'
-import Nav from './nav'
+import styled from "styled-components"
+import Nav from "./nav"
 import Link from "next/link"
+import Menu from "./burgermenu"
 
 const HeaderCont = styled.header`
 	display: flex;
@@ -28,6 +29,7 @@ const Header = () => {
 		<HeaderCont>
 			<h1><Link href="/">wych.dev</Link></h1>
 			<Nav />
+			<Menu />
 		</HeaderCont>
 	)
 }
