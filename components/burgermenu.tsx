@@ -1,10 +1,10 @@
 import styled, {css} from "styled-components"
 import React, {useState} from "react"
-//import Link from "next/link"
+import NavLinks from "./navlinks"
 
 const MenuLine = styled.div`
 	width: 1.8rem;
-	height: 2px;
+	height: 3px;
 	border-radius: 2px;
 	background-color: var(--fg);
 	&:not(:last-child) {
@@ -39,9 +39,12 @@ const BurgerContainer = styled.div<{open: boolean}>`
 	}
 
 	${({open}) => open && css`
+		position: fixed;
+		right: 4rem;
+		z-index: 99;
+
 		div {
 			position: absolute;
-			height: 4px;
 		}
 
 		div:nth-child(1) {
@@ -58,14 +61,61 @@ const BurgerContainer = styled.div<{open: boolean}>`
 	`}
 `
 
+const BNavCont = styled.nav<{show: boolean}>`
+	display: none;
+	backdrop-filter: blur(25px);
+	position: fixed;
+	flex-direction: column;
+	background: #222a;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+
+	align-items: center;
+	justify-content: center;
+
+	gap: 1.5rem;
+	font-size: 1.2rem;
+	border: unset;
+
+	a {
+		font-size: 2rem;
+		color: var(--fg-button);
+		transition: var(--trans-time) opacity;
+		text-align: center;
+	}
+
+	a:hover {
+		opacity: .4;
+	}
+
+
+	${({show}) => show && css`
+		display: flex;
+	`}
+`
+
+const BNav: React.FC<{show: boolean}> = ({show}) => {
+	return (
+		<BNavCont show={show}>
+			<NavLinks />
+		</BNavCont>
+	)
+}
+
 const Menu = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<BurgerContainer open={open} onClick={() => setOpen(!open)}>
-				<MenuLine />
-				<MenuLine />
-				<MenuLine />
-		</BurgerContainer>
+		<>
+			<BNav show={open} />
+			<BurgerContainer open={open} onClick={() => setOpen(!open)}>
+					<MenuLine />
+					<MenuLine />
+					<MenuLine />
+			</BurgerContainer>
+		</>
 	)
 }
 

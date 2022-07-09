@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import ActiveLink from './activelink'
+import styled from "styled-components"
+import NavLinks from "./navlinks"
 
 const NavCont = styled.nav`
 	display: flex;
@@ -26,11 +26,7 @@ const NavCont = styled.nav`
 const Nav = () => {
 	return (
 		<NavCont>
-			<ActiveLink href="/">About</ActiveLink>
-			<ActiveLink href="/#contact">Contact</ActiveLink>
-			<ActiveLink href="/projects">Projects</ActiveLink>
-			<a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>
-			<a href="https://git.wych.dev" target="_blank" rel="noreferrer">WychGit</a>
+			<NavLinks />
 		</NavCont>
 	)
 }
