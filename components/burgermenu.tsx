@@ -40,7 +40,7 @@ const BurgerContainer = styled.div<{open: boolean}>`
 
 	${({open}) => open && css`
 		position: fixed;
-		right: 4rem;
+		right: 2rem;
 		z-index: 99;
 
 		div {
