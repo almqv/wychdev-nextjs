@@ -62,16 +62,19 @@ const BurgerContainer = styled.div<{open: boolean}>`
 `
 
 const BNavCont = styled.nav<{show: boolean}>`
-	display: none;
+	display: flex;
+	opacity: 0;
 	backdrop-filter: blur(25px);
 	position: fixed;
 	flex-direction: column;
-	background: #222a;
+	background: #21242baf;
 	left: 0;
 	top: 0;
+	pointer-events: none;
 	width: 100vw;
 	height: 100vh;
 	z-index: 2;
+	transition: opacity .2s;
 
 	align-items: center;
 	justify-content: center;
@@ -94,12 +97,21 @@ const BNavCont = styled.nav<{show: boolean}>`
 
 	${({show}) => show && css`
 		display: flex;
+		opacity: 1;
+		pointer-events: unset;
 	`}
+
+
+	@media screen and (min-width: 960px) {
+		display: none;
+		position: absolute;
+		top: 0;
+	}
 `
 
-const BNav: React.FC<{show: boolean}> = ({show}) => {
+const BNav: React.FC<{show: boolean, onClick: () => void}> = ({show, onClick}) => {
 	return (
-		<BNavCont show={show}>
+		<BNavCont show={show} onClick={onClick}>
 			<NavLinks />
 		</BNavCont>
 	)
@@ -109,7 +121,7 @@ const Menu = () => {
 	const [open, setOpen] = useState(false);
 	return (
 		<>
-			<BNav show={open} />
+			<BNav show={open} onClick={() => setOpen(false)}/>
 			<BurgerContainer open={open} onClick={() => setOpen(!open)}>
 					<MenuLine />
 					<MenuLine />
