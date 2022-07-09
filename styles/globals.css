@@ -34,6 +34,7 @@
 
 html {
 	background: var(--bg);
+	scroll-behavior: smooth;
 }
 
 #__next { /*body*/

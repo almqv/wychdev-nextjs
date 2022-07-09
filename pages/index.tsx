@@ -56,7 +56,7 @@ const Page: NextPageWithLayout = () => {
 		<>
 			<Section> 
 				<h2 id="about">About</h2> 
-				<p>I am a full-stack developer <Nem>(58% backend / 42% frontend ish)</Nem> with a passion for <Gold>programming</Gold>, <Gold>physics</Gold>, <Gold>mathematics</Gold> and anything <Gold>*NIX</Gold> (Linux, UNIX etc) related.</p> 
+				<p>I am a <em>full-stack software engineer</em> with a passion for <Gold>programming</Gold>, <Gold>physics</Gold>, <Gold>mathematics</Gold> and anything <Gold>*NIX</Gold> (Linux, UNIX etc) related. Currently { new Date().getFullYear() - 2003 } years old.</p> 
 				{/*TODO: Add GitHub code frequency/contrib here*/}
 			</Section> 
 
