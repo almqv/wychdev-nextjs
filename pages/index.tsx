@@ -38,11 +38,11 @@ export const Code = styled.code`
 	padding: .1rem .4rem;
 `
 
-export const CList = styled.code`
+export const CList = styled.ul`
 	list-style: none;
 
 	li {
-		margin: 1rem;
+		margin: 1rem !important;
 	}
 `
 
