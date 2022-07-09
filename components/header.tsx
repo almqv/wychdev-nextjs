@@ -22,6 +22,11 @@ const HeaderCont = styled.header`
 		margin-left: auto;
 		float: right;
 	}
+
+
+	@media screen and (max-width: 960px) {
+		padding: 1rem 2rem;
+	}
 `
 
 const Header = () => {
