@@ -25,12 +25,6 @@ export const Section = styled.section`
 	}
 `
 
-export const Gold = styled.em`
-	color: var(--fg-gold);
-	font-weight: normal;
-	text-shadow: var(--emph-shadow) var(--fg-gold);
-`
-
 export const Code = styled.code`
 	background-color: var(--bg-dark);
 	color: var(--fg-code);
@@ -56,7 +50,7 @@ const Page: NextPageWithLayout = () => {
 		<>
 			<Section> 
 				<h2 id="about">About</h2> 
-				<p>I am a <em>full-stack software engineer</em> with a passion for <Gold>programming</Gold>, <Gold>physics</Gold>, <Gold>mathematics</Gold> and anything <Gold>*NIX</Gold> (Linux, UNIX etc) related. Currently { new Date().getFullYear() - 2003 } years old.</p> 
+				<p>I am a <em>full-stack software engineer</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> (Linux, UNIX etc) related.</p>
 				{/*TODO: Add GitHub code frequency/contrib here*/}
 			</Section> 
 
@@ -70,31 +64,29 @@ const Page: NextPageWithLayout = () => {
 				<p>Here are programming languages/technologies that I know/use (<em>not limited to or ranked in any particular order</em>):</p>
 				<h3>Languages</h3>
 				<ul>
-					<li>C/C++</li>
 					<li>Rust</li>
+					<li>C/C++</li>
 					<li>Python</li>
-					<li>TypeScript/JavaScript</li>
-					<li>Lua Script</li>
 					<li>Ruby</li>
+					<li>Lua Script</li>
 					<li>Assembly (NASM)</li>
 					<li>Bash</li>
+					<li>TypeScript/JavaScript</li>
 					<li>C#</li>
 				</ul>
 
 				<h3>Technologies</h3>
 				<ul>
-					<li>Next.js (+ React)</li>
 					<li>HTML + CSS/SASS/SCSS</li>
 					<li>Docker</li>
 					<li>
 						GNU/Linux
 						<ul>
 							<li>Arch</li>
-							<li>Ubuntu (Server)</li>
 							<li>Debian</li>
-							<li>Alpine</li>
 						</ul>
 					</li>
+					<li>Next.js (+ React)</li>
 					<li>Git</li>
 					<li>Jira</li>
 					<li>SSH</li>
