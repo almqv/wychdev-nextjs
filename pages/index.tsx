@@ -59,7 +59,7 @@ const Page: NextPageWithLayout = () => {
 			</Section> 
 
 			<Section>
-				<h2 id="skills">Skillstack</h2>
+				<h2 id="skills">Skills</h2>
 				<p>Here are programming languages/technologies that I know/use (<em>not limited to or ranked in any particular order</em>):</p>
 				<h3>Programming Languages</h3>
 				<ul>
