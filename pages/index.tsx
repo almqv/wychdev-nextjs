@@ -50,27 +50,26 @@ const Page: NextPageWithLayout = () => {
 		<>
 			<Section> 
 				<h2 id="about">About</h2> 
-				<p>I am a <em>student/full-stack software engineer</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> (Linux, UNIX etc) related.</p>
+				<p>I am a <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
 				{/*TODO: Add GitHub code frequency/contrib here*/}
 			</Section> 
 
 			<Section> 
-				<h2>Projects</h2> 
 				<p>Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
 			</Section> 
 
 			<Section>
-				<h2 id="skills">Skills</h2>
+				<h2 id="skills">Skillstack</h2>
 				<p>Here are programming languages/technologies that I know/use (<em>not limited to or ranked in any particular order</em>):</p>
-				<h3>Languages</h3>
+				<h3>Programming Languages</h3>
 				<ul>
 					<li>Rust</li>
 					<li>C/C++</li>
 					<li>Python</li>
 					<li>Ruby</li>
 					<li>Lua Script</li>
-					<li>Assembly (NASM)</li>
-					<li>Bash</li>
+					<li>Assembly <Nem>(NASM, x86)</Nem></li>
+					<li>Bash <Nem>(Literally any POSIX shell)</Nem></li>
 					<li>TypeScript/JavaScript</li>
 					<li>C#</li>
 				</ul>
@@ -80,10 +79,11 @@ const Page: NextPageWithLayout = () => {
 					<li>HTML + CSS/SASS/SCSS</li>
 					<li>Docker</li>
 					<li>
-						GNU/Linux
+						Linux <Nem>(GNU/Linux)</Nem>
 						<ul>
 							<li>Arch</li>
 							<li>Debian</li>
+							<li>...</li>
 						</ul>
 					</li>
 					<li>Next.js (+ React)</li>
@@ -99,7 +99,7 @@ const Page: NextPageWithLayout = () => {
 				<p>You can contact me through email. And if you prefer it, you can contact me using PGP. Do note that my <em>email address below is encrypted</em> as a precaution against bots et cetera. <em>Do not worry, it is easy to crack</em>. Alternatively you could query for my email with my PGP fingerprint (key-id) on some PGP key server (i.e. the <a href="https://pgp.mit.edu/" target="_blank" rel="noreferrer">MIT</a> or <a href="https://keyserver.ubuntu.com/" target="_blank" rel="noreferrer">Ubuntu</a> key-server).</p>
 				<CList>
 					<li>
-						PGP Fingerprint: <Code>68B2976849F03C7238AEB081E31A99CE3E75A158</Code>
+						PGP fingerprint: <Code>68B2 9768 49F0 3C72 38AE B081 E31A 99CE 3E75 A158</Code>
 					</li>
 					<li>
 						Email: <Code>cnlueXpkaXZmZ0B0em52eS5wYnoK</Code>

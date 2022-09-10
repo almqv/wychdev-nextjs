@@ -7,7 +7,7 @@ const HeaderCont = styled.header`
 	display: flex;
 	align-items: center;
 	border-bottom: var(--border-size) var(--border-type) var(--border-color);
-	padding: 1rem 4rem;
+	padding: .8rem 2rem;
 	gap: 2rem;
 
 	h1 {
