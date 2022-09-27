@@ -50,7 +50,7 @@ const Page: NextPageWithLayout = () => {
 		<>
 			<Section> 
 				<h2 id="about">About</h2> 
-				<p>I am a <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
+				<p>I am a 19 year old <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
 				{/*TODO: Add GitHub code frequency/contrib here*/}
 			</Section> 
 
