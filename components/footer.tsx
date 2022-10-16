@@ -3,10 +3,10 @@ import Link from "next/link"
 
 const FooterCont = styled.footer`
 	display: flex;
-	align-items: left;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	border-top: var(--border-size) var(--border-type) var(--border-color); 
+	/*border-top: var(--border-size) var(--border-type) var(--border-color);*/
 	margin-top: auto;
 	padding: 0 1.2rem;
 
@@ -29,7 +29,7 @@ const Footer = () => {
 		<>
 			<Spacer />
 			<FooterCont>
-				<p>&copy; {new Date().getFullYear()} Elias Almqvist</p>
+				<p>&copy; Copyright {new Date().getFullYear()}</p>
 			</FooterCont>
 		</>
 	)

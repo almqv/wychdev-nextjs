@@ -2,25 +2,25 @@
 	font-size: 16px;
 	--border-type: solid;
 	--border-size: 1px;
-	--border-color: #373a44;
+	--border-color: var(--fg-faded);
 	--border-radius: 1rem;
 
 	--content-max-width: 60rem;
 	--h-uni-padding: .8rem;
 	--v-uni-padding: .2rem;
 
-	--fg: #bbc2cf;
+	--fg: #ebdbb2;
 	color: var(--fg);
-	--fg-emph: #fff;
-	--fg-faded: #aaa;
+	--fg-emph: #fbebe2;
+	--fg-faded: #928373;
 	--fg-button: var(--fg-faded);
-	--fg-link: #abf;
+	--fg-link: #88aaa3;
 	--fg-code: #ffbe85;
 	--fg-gold: #fff190;
-	--emph-shadow: 0 0 1px;
+	--emph-shadow: 0 0 2px;
 
-	--bg: #272a34;
-	--bg-dark: #21242b; 
+	--bg: #1d2021;
+	--bg-dark: #282828; 
 
 	--trans-time: .2s;
 }
