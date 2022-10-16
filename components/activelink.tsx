@@ -7,7 +7,7 @@ const ALink = styled.a<{active?: boolean}>`
 	border-bottom: 1px solid transparent;
 	${({active}) => active && css`
 		color: var(--fg) !important;
-		border-bottom-color: currentColor;
+		/*border-bottom-color: currentColor;*/
 	`}
 `
 
