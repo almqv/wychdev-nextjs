@@ -1,7 +1,8 @@
-import type {NextPageWithLayout} from './_app'
-import type { ReactElement } from 'react'
-import Layout from '../components/layout'
-import styled from 'styled-components'
+import type {NextPageWithLayout} from "./_app"
+import type { ReactElement } from "react"
+import Layout from "../components/layout"
+import Nav from "../components/nav"
+import styled from "styled-components"
 import Link from "next/link"
 
 export const Section = styled.section`
@@ -9,7 +10,9 @@ export const Section = styled.section`
 	justify-content: center;
 	flex-direction: column;
 	padding: 0 1rem;
-	margin: 2rem 0;
+	/*margin: 2rem 0;*/
+	margin: 0 0;
+	height: 100vh;
 
 	h2, h3 {
 		margin: 8px 0;
@@ -18,6 +21,10 @@ export const Section = styled.section`
 	p {
 		margin: 0;
 		color: var(--fg);
+	}
+
+	.topmargin {
+		margin-top: 2rem;
 	}
 
 	ul li {
@@ -49,13 +56,11 @@ const Page: NextPageWithLayout = () => {
 	return (
 		<>
 			<Section> 
-				<h2 id="about">About</h2> 
-				<p>I am a <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
+				<h2 id="about">$ whoami</h2> 
+				<p>&gt; I am a <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
 				{/*TODO: Add GitHub code frequency/contrib here*/}
-			</Section> 
-
-			<Section> 
-				<p>Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
+				<p className="topmargin">Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
+				<Nav />
 			</Section> 
 
 			<Section>
