@@ -3,11 +3,12 @@ import type { AppProps } from "next/app"
 import type { ReactElement, ReactNode } from "react"
 import type { NextPage } from "next"
 
+// Font Awesome
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; 
 
-export type NextPageWithLayout = NextPage & {
+export type NextPageWithLayout<T = {}> = NextPage<T> & {
 	getLayout?: (page: ReactElement) => ReactNode
 }
 

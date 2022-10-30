@@ -1,0 +1,25 @@
+{
+  user(login: "E-Almqvist") {
+    pinnedItems(first: 6) {
+      totalCount
+      edges {
+        node {
+          ... on Repository {
+            id
+            name
+            createdAt
+            description
+            forkCount
+            licenseInfo {
+              id
+              nickname
+              url
+            }
+            stargazerCount
+            url
+          }
+        }
+      }
+    }
+  }
+}
