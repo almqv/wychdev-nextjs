@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import Link from "next/link"
 import IconLink from "components/iconlink"
-import {faBook, faEnvelope, faFolderOpen, faUniversity} from "@fortawesome/free-solid-svg-icons"
+import {faEnvelope, faFolderOpen} from "@fortawesome/free-solid-svg-icons"
 import {faGit, faGithub} from "@fortawesome/free-brands-svg-icons"
 
 export const Section = styled.section`
