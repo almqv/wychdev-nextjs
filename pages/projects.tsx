@@ -9,7 +9,7 @@ const Page: NextPageWithLayout = () => {
 		<>
 			<Section>
 				<h2>Page under development...</h2>
-				<p>While you wait, why not check out my <a href="https://github.com/E-Almqvist">GitHub</a>? Or perhaps my very own <a href="https://git.wych.dev">git-server</a>?</p>
+				<p>While you wait, why not check out my <a href="https://github.com/E-Almqvist">GitHub</a>? Or perhaps my very own <a href="https://git.wych.dev/elal">git-server</a>?</p>
 				<p>Or you could also <Link href="/">go back</Link> to the home page.</p>
 			</Section>
 		</>

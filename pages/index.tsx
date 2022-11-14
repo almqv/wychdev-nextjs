@@ -101,7 +101,7 @@ const Page: NextPageWithLayout = () => {
 				<h2 id="about">$ whoami</h2> 
 				<p>&gt; I am a {secondsToYears(getAge())} year old <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
 				{/*TODO: Add GitHub code frequency/contrib here*/}
-				<p className="topmargin">Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
+				<p className="topmargin">Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev/elal" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
 
 				{/*
 				<div className="topmargin" id="img-container">
@@ -113,7 +113,7 @@ const Page: NextPageWithLayout = () => {
 					<IconLink href="#contact" icon={ faEnvelope } target="_self" rel="noreferrer"/>
 					<IconLink href="/projects" icon={ faFolderOpen } target="_self" rel="noreferrer"/>
 					<IconLink href="https://github.com/E-Almqvist" icon={ faGithub } target="_blank" rel="noreferrer"/>
-					<IconLink href="https://git.wych.dev" icon={ faGit } target="_blank" rel="noreferrer"/>
+					<IconLink href="https://git.wych.dev/elal" icon={ faGit } target="_blank" rel="noreferrer"/>
 				</LinkList>
 			</Section> 
 
