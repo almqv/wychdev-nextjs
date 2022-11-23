@@ -6,6 +6,7 @@ import Link from "next/link"
 import IconLink from "components/iconlink"
 import {faBook, faEnvelope, faFolderOpen, faUniversity} from "@fortawesome/free-solid-svg-icons"
 import {faGit, faGithub} from "@fortawesome/free-brands-svg-icons"
+import Footer, {Spacer} from "components/footer"
 
 export const Section = styled.section`
 	display: flex;
@@ -40,6 +41,11 @@ export const Section = styled.section`
 	#img-container img {
 		width: 22rem;
 		height: auto;
+	}
+
+	footer {
+		margin-top: 1rem;
+		opacity: .5;
 	}
 `
 
@@ -131,6 +137,8 @@ const Page: NextPageWithLayout = () => {
 						GitHub: <a href="https://github.com/E-Almqvist" target="_blank" rel="noreferrer">github.com/E-Almqvist</a>
 					</li>
 				</CList>
+
+				<Footer />
 			</Section>
 		</>
 	)
