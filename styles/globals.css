@@ -39,7 +39,7 @@ html {
 }
 
 section {
-	scroll-snap-align: center;
+	/* scroll-snap-align: center; */
 }
 
 #__next { /*body*/

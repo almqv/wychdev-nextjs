@@ -138,7 +138,6 @@ const Page: NextPageWithLayout = () => {
 					</li>
 				</CList>
 
-				<Footer />
 			</Section>
 		</>
 	)
