@@ -2,11 +2,10 @@ import type {NextPageWithLayout} from "./_app"
 import type { ReactElement } from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
-import Link from "next/link"
 import IconLink from "components/iconlink"
-import {faEnvelope, faFolderOpen} from "@fortawesome/free-solid-svg-icons"
+//import ScrollMe from "components/scrollme"
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import {faGit, faGithub} from "@fortawesome/free-brands-svg-icons"
-import Footer, {Spacer} from "components/footer"
 
 export const Section = styled.section`
 	display: flex;
@@ -18,6 +17,7 @@ export const Section = styled.section`
 	min-height: 100vh;
 
 	h2, h3 {
+		font-size: 2rem;
 		margin: 8px 0;
 	}
 
@@ -66,7 +66,6 @@ export const CList = styled.ul`
 
 export const Nem = styled.span`
 	color: var(--fg-faded);
-	opacity: .8;
 `
 
 export const LinkList = styled.div`
@@ -104,10 +103,10 @@ const Page: NextPageWithLayout = () => {
 	return (
 		<>
 			<Section> 
-				<h2 id="about">$ whoami</h2> 
-				<p>&gt; I am a {secondsToYears(getAge())} year old <em>Computer Science & Engineering student</em> with a passion for <em>programming</em>, <em>physics</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
+				<h2 id="about">/almqv</h2> 
+				<p>I am a {secondsToYears(getAge())} year old <em>Computer Science & Engineering student</em> with a passion for <em>physics</em>, <em>programming</em>, <em>mathematics</em> and anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.</p>
 				{/*TODO: Add GitHub code frequency/contrib here*/}
-				<p className="topmargin">Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/almqv" target="_blank" rel="noreferrer">GitHub</a>. You can also check out <Link href="/projects">/projects</Link> to view all of my projects (including hardware projects and so on).</p> 
+				<p className="topmargin">Most of my projects are open-source, and if you are interested, you can find all of my projects on my <a href="https://git.wych.dev/elal" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/almqv" target="_blank" rel="noreferrer">GitHub</a>.</p> 
 
 				{/*
 				<div className="topmargin" id="img-container">
@@ -117,10 +116,11 @@ const Page: NextPageWithLayout = () => {
 
 				<LinkList className="topmargin">
 					<IconLink href="#contact" icon={ faEnvelope } target="_self" rel="noreferrer"/>
-					<IconLink href="/projects" icon={ faFolderOpen } target="_self" rel="noreferrer"/>
+					{/*<IconLink href="/projects" icon={ faFolderOpen } target="_self" rel="noreferrer"/>*/}
 					<IconLink href="https://github.com/almqv" icon={ faGithub } target="_blank" rel="noreferrer"/>
-					<IconLink href="https://git.wych.dev" icon={ faGit } target="_blank" rel="noreferrer"/>
+					<IconLink href="https://git.wych.dev/elal" icon={ faGit } target="_blank" rel="noreferrer"/>
 				</LinkList>
+
 			</Section> 
 
 			<Section>

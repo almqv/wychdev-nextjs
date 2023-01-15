@@ -9,25 +9,24 @@
 	--h-uni-padding: .8rem;
 	--v-uni-padding: .2rem;
 
-	--fg: #ebdbb2;
+	--fg: #EFE8D7;
 	color: var(--fg);
-	--fg-emph: #fbebe2;
+	/* --fg-emph: #fbebe2; */
+	--fg-emph: var(--fg);
 	--fg-faded: #928373;
 	--fg-button: var(--fg-faded);
-	--fg-link: #88aaa3;
+	--fg-link: #8398AC;
 	--fg-code: #ffbe85;
 	--fg-gold: #fff190;
 	--emph-shadow: 0 0 2px;
 
-	--bg: #1d2021;
-	--bg-dark: #282828; 
-
-	--trans-time: .2s;
+	--bg: #181818;
+	--trans-time: 200ms;
 }
 
 * {
 	box-sizing: border-box;
-	font-family: "IBM Plex Mono", monospace;
+	font-family: "Open Sans";
 	padding: 0;
 	margin: 0;
 }
@@ -69,8 +68,8 @@ p {
 }
 
 em {
-	font-weight: normal;
+	/* font-weight: normal; */
 	font-style: normal;
-	text-shadow: var(--emph-shadow) currentColor;
+	/* text-shadow: var(--emph-shadow) currentColor; */
 }
 
