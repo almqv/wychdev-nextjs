@@ -27,7 +27,7 @@ export const Section = styled.section`
 	}
 
 	.topmargin {
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 
 	ul li {
@@ -50,7 +50,9 @@ export const Section = styled.section`
 `
 
 export const Code = styled.code`
-	background-color: var(--bg-dark);
+	font-family: monospace;
+	font-size: .9rem;
+	background-color: var(--bg-emph);
 	color: var(--fg-code);
 	border-radius: .4rem;
 	padding: .1rem .4rem;

@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import styled from "styled-components"
 
 const ILink = styled.a`
-	font-size: 24px;		
+	font-size: 1.5rem;
 	margin: 0 .4rem;
 `
 
