@@ -11,20 +11,19 @@
 	--h-uni-padding: .8rem;
 	--v-uni-padding: .2rem;
 
-	--fg: #E1DCCE;
+	--fg: #c5c8c6;
 	color: var(--fg);
-	/* --fg-emph: #fbebe2; */
-	--fg-emph: #EFE8D7;
-	--fg-faded: #928373;
+	--fg-emph: var(--fg);
+	--fg-faded: #969896;
 	--fg-button: var(--fg-faded);
-	--fg-link: #8398AC;
-	--fg-code: #ffbe85;
-	--fg-gold: #fff190;
+	--fg-link: #5b83a6;
+	--fg-code: #de935f;
+	--fg-gold: #f0c674;
 	--emph-shadow: 0 0 2px;
 
-	--bg: #181818;
-	--bg-emph: #242424;
-	--trans-time: 200ms;
+	--bg: #16191c;
+	--bg-emph: #212426;
+	--trans-time: 150ms;
 }
 
 * {
@@ -59,7 +58,7 @@ a {
 }
 
 a:hover {
-	opacity: .4;
+	opacity: .8;
 }
 
 h1, h2, h3, h4, h5, em {

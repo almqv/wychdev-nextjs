@@ -1,134 +1,139 @@
-import styled, {css} from "styled-components"
-import React, {useState} from "react"
-import NavLinks from "./navlinks"
+import styled, { css } from "styled-components";
+import React, { useState } from "react";
+import NavLinks from "./navlinks";
 
 const MenuLine = styled.div`
-	width: 1.8rem;
-	height: 3px;
-	border-radius: 2px;
-	background-color: var(--fg);
-	&:not(:last-child) {
-		margin-bottom: .4rem;
-	}
-`
+  width: 1.8rem;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--fg);
+  &:not(:last-child) {
+    margin-bottom: 0.4rem;
+  }
+`;
 
-const BurgerContainer = styled.div<{open: boolean}>`
-	display: none;
-	width: 1.8rem;
-	height: 1.8rem;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: auto;
+const BurgerContainer = styled.div<{ open: boolean }>`
+  display: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
 
-	div {
-		transition: .2s;
-	}
+  div {
+    transition: 0.2s;
+  }
 
-	&:hover {
-		cursor: pointer;
-	}
+  &:hover {
+    cursor: pointer;
+  }
 
-	@media screen and (max-width: 960px) {
-		display: flex;
+  @media screen and (max-width: 960px) {
+    display: flex;
 
-		nav {
-			display: none !important;
-			position: absolute;
-			top: 0;
-		}
-	}
+    nav {
+      display: none !important;
+      position: absolute;
+      top: 0;
+    }
+  }
 
-	${({open}) => open && css`
-		position: fixed;
-		right: 2rem;
-		z-index: 99;
+  ${({ open }) =>
+    open &&
+    css`
+      position: fixed;
+      right: 2rem;
+      z-index: 99;
 
-		div {
-			position: absolute;
-		}
+      div {
+        position: absolute;
+      }
 
-		div:nth-child(1) {
-			transform: rotate(45deg) translate(.2rem, .2rem);
-		}
+      div:nth-child(1) {
+        transform: rotate(45deg) translate(0.2rem, 0.2rem);
+      }
 
-		div:nth-child(2) {
-			transform: rotate(-45deg) translate(-.18rem, .2rem);
-		}
+      div:nth-child(2) {
+        transform: rotate(-45deg) translate(-0.18rem, 0.2rem);
+      }
 
-		div:last-child {
-			display: none;
-		}
-	`}
-`
+      div:last-child {
+        display: none;
+      }
+    `}
+`;
 
-const BNavCont = styled.nav<{show: boolean}>`
-	display: flex;
-	opacity: 0;
-	backdrop-filter: blur(25px);
-	position: fixed;
-	flex-direction: column;
-	background: #21242baf;
-	left: 0;
-	top: 0;
-	pointer-events: none;
-	width: 100vw;
-	height: 100vh;
-	z-index: 2;
-	transition: opacity .2s;
+const BNavCont = styled.nav<{ show: boolean }>`
+  display: flex;
+  opacity: 0;
+  backdrop-filter: blur(25px);
+  position: fixed;
+  flex-direction: column;
+  background: #21242baf;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  transition: opacity 0.2s;
 
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-	gap: 1.5rem;
-	font-size: 1.2rem;
-	border: unset;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  border: unset;
 
-	a {
-		font-size: 2rem;
-		color: var(--fg-button);
-		transition: var(--trans-time) opacity;
-		text-align: center;
-	}
+  a {
+    font-size: 2rem;
+    color: var(--fg-button);
+    transition: var(--trans-time) opacity;
+    text-align: center;
+  }
 
-	a:hover {
-		opacity: .4;
-	}
+  a:hover {
+    opacity: 0.4;
+  }
 
+  ${({ show }) =>
+    show &&
+    css`
+      display: flex;
+      opacity: 1;
+      pointer-events: unset;
+    `}
 
-	${({show}) => show && css`
-		display: flex;
-		opacity: 1;
-		pointer-events: unset;
-	`}
+  @media screen and (min-width: 960px) {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+`;
 
-
-	@media screen and (min-width: 960px) {
-		display: none;
-		position: absolute;
-		top: 0;
-	}
-`
-
-const BNav: React.FC<{show: boolean, onClick: () => void}> = ({show, onClick}) => {
-	return (
-		<BNavCont show={show} onClick={onClick}>
-			<NavLinks />
-		</BNavCont>
-	)
-}
+const BNav: React.FC<{ show: boolean; onClick: () => void }> = ({
+  show,
+  onClick,
+}) => {
+  return (
+    <BNavCont show={show} onClick={onClick}>
+      <NavLinks />
+    </BNavCont>
+  );
+};
 
 const Menu = () => {
-	const [open, setOpen] = useState(false);
-	return (
-		<>
-			<BNav show={open} onClick={() => setOpen(false)}/>
-			<BurgerContainer open={open} onClick={() => setOpen(!open)}>
-					<MenuLine />
-					<MenuLine />
-					<MenuLine />
-			</BurgerContainer>
-		</>
-	)
-}
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <BNav show={open} onClick={() => setOpen(false)} />
+      <BurgerContainer open={open} onClick={() => setOpen(!open)}>
+        <MenuLine />
+        <MenuLine />
+        <MenuLine />
+      </BurgerContainer>
+    </>
+  );
+};
 
-export default Menu
+export default Menu;

@@ -116,14 +116,8 @@ const Page: NextPageWithLayout = () => {
         {/*TODO: Add GitHub code frequency/contrib here*/}
         <p className="topmargin">
           Most of my projects are open-source, and if you are interested, you
-          can find all of my projects on my{" "}
-          <a href="https://git.wych.dev/elal" target="_blank" rel="noreferrer">
-            git-server
-          </a>{" "}
-          or{" "}
-          <a href="https://github.com/almqv" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
+          can find all of my projects on my <a href="https://git.wych.dev/elal" target="_blank" rel="noreferrer">git-server</a> or <a href="https://github.com/almqv" target="_blank" rel="GITHUBuuuuuuuu
+          </Auuuu>
           .
         </p>
 
