@@ -8,6 +8,9 @@ const ScrollMeWrapper = styled.div`
   bottom: 2rem;
   left: 50%;
   color: var(--fg-faded);
+  animation-name: scrollMeAnim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 
   @media only screen and (max-height: 490px) {
     display: none;
@@ -21,15 +24,31 @@ const ScrollMeWrapper = styled.div`
     width: 1.2rem;
     height: auto;
   }
+
+  @keyframes scrollMeAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(.75rem);
+    }
+  }
 `;
 
 const ScrollMe = (props: SVGProps<SVGSVGElement> & { href: string }) => {
   const handleScroll = () => {
     const sectionRef = document.querySelector(props.href);
     if (sectionRef) {
-	sectionRef.scrollIntoView({ behavior: "smooth" });
+      sectionRef.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <ScrollMeWrapper onClick={handleScroll}>
