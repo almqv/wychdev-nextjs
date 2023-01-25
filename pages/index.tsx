@@ -148,7 +148,7 @@ const Page: NextPageWithLayout = () => {
             rel="noreferrer"
           />
         </LinkList>
-        {/*<ScrollMe href="#contact" />*/}
+	<ScrollMe href="#contact" />
       </Section>
 
       <Section>
