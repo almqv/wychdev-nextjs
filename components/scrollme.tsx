@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const ScrollMeWrapper = styled.div`
   position: absolute;
-  bottom: 2rem;
+  bottom: 6rem;
   left: 50%;
   color: var(--fg-faded);
   animation-name: scrollMeAnim;
