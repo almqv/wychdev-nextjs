@@ -113,7 +113,7 @@ const Page: NextPageWithLayout = () => {
           <em>Computer Science and Engineering student</em> with a passion for{" "}
           <em>engineering</em>, <em>programming</em>, and <em>mathematics</em>.
           I also have an interest in physics and <em>*NIX</em>{" "}
-          <Nem>(Linux, UNIX etc)</Nem> systems.
+          <Nem>(Linux, UNIX, etc)</Nem> systems.
         </p>
         {/*TODO: Add GitHub code frequency/contrib here*/}
         <p className="topmargin">
