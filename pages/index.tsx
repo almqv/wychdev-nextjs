@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import IconLink from "components/iconlink";
 import ScrollMe from "components/scrollme";
+import HiddenEmail from "components/hiddenemail";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -108,10 +109,11 @@ const Page: NextPageWithLayout = () => {
       <Section>
         <h2 id="about">/almqv</h2>
         <p>
-          I am a {secondsToYears(getAge())} year old{" "}
-          <em>Computer Science & Engineering student</em> with a passion for{" "}
-          <em>physics</em>, <em>programming</em>, <em>mathematics</em> and
-          anything <em>*NIX</em> <Nem>(Linux, UNIX etc)</Nem> related.
+          I am a {secondsToYears(getAge())}-year-old{" "}
+          <em>Computer Science and Engineering student</em> with a passion for{" "}
+          <em>engineering</em>, <em>programming</em>, and <em>mathematics</em>.
+          I also have an interest in physics and <em>*NIX</em>{" "}
+          <Nem>(Linux, UNIX etc)</Nem> systems.
         </p>
         {/*TODO: Add GitHub code frequency/contrib here*/}
         <p className="topmargin">
@@ -148,30 +150,14 @@ const Page: NextPageWithLayout = () => {
             rel="noreferrer"
           />
         </LinkList>
-	<ScrollMe href="#contact" />
+        <ScrollMe href="#contact" />
       </Section>
 
       <Section>
         <h2 id="contact">Contact</h2>
         <p>
           You can contact me through email. And if you prefer it, you can
-          contact me using PGP. Do note that my{" "}
-          <em>email address below is encrypted</em> as a precaution against bots
-          et cetera. <em>Do not worry, it is easy to crack</em>. Alternatively
-          you could query for my email with my PGP fingerprint (key-id) on some
-          PGP key server (i.e. the{" "}
-          <a href="https://pgp.mit.edu/" target="_blank" rel="noreferrer">
-            MIT
-          </a>{" "}
-          or{" "}
-          <a
-            href="https://keyserver.ubuntu.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Ubuntu
-          </a>{" "}
-          key-server).
+          contact me using PGP.
         </p>
         <CList>
           <li>
@@ -179,7 +165,13 @@ const Page: NextPageWithLayout = () => {
             <Code>68B2 9768 49F0 3C72 38AE B081 E31A 99CE 3E75 A158</Code>
           </li>
           <li>
-            Email: <Code>cnlueXpkaXZmZ0B0em52eS5wYnoK</Code>
+            Email:{" "}
+            <HiddenEmail
+              email="elalmqvist@gmail.com"
+              alt="[hidden, enable js to view]"
+              althref="#contact"
+            />{" "}
+            {/* <Code>cnlueXpkaXZmZ0B0em52eS5wYnoK</Code> */}
           </li>
           <li>
             GitHub:{" "}
