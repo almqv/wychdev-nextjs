@@ -168,7 +168,7 @@ const Page: NextPageWithLayout = () => {
             Email:{" "}
             <HiddenEmail
               email="elalmqvist@gmail.com"
-              alt="[hidden, enable js to view]"
+              alt="[hidden, solve this to view: cnlueXpkaXZmZ0B0em52eS5wYnoK]"
               althref="#contact"
             />{" "}
             {/* <Code>cnlueXpkaXZmZ0B0em52eS5wYnoK</Code> */}
