@@ -110,10 +110,8 @@ const Page: NextPageWithLayout = () => {
         <h2 id="about">/almqv</h2>
         <p>
           I am a {secondsToYears(getAge())}-year-old{" "}
-          <em>Computer Science and Engineering student</em> with a passion for{" "}
-          <em>engineering</em>, <em>programming</em>, and <em>mathematics</em>.
-          I also have an interest in <em>physics</em> and <em>*NIX</em>{" "}
-          <Nem>(Linux, UNIX, etc)</Nem> systems.
+          <em>Engineer</em> with a passion for{" "}
+          <em>CS</em>, and <em>physics/mathematics</em>.
         </p>
         {/*TODO: Add GitHub code frequency/contrib here*/}
         <p className="topmargin">
