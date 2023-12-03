@@ -110,9 +110,12 @@ const Page: NextPageWithLayout = () => {
         <h2 id="about">/almqv</h2>
         <p>
           I am a {secondsToYears(getAge())}-year-old{" "}
-          <em>Engineer</em> with a passion for{" "}
-          <em>CS</em>, and <em>physics/mathematics</em>.
+          <em>engineer</em> with a passion for{" "}
+          <em>CS</em>, <em>physics</em>, and <em>mathematics</em>.
         </p>
+		<p>
+		I am also a startup founder. Currently working on <a href="https://www.linkedin.com/company/ingenuityai/" target="_blank" rel="noreferrer">ingenuity</a>.
+		</p>
         {/*TODO: Add GitHub code frequency/contrib here*/}
         <p className="topmargin">
           Most of my projects are open-source, and if you are interested, you
